@@ -42,7 +42,7 @@ while True:
 		times.append(datetime.now())
 	if status_list[-1] == 1 and status_list[-2] == 0:
 		print("Motion Detected")
-		print('\a\a')						  # This part of code only works on mac
+		print('\a\a')				# This part of code only works on mac
 		os.system('say "Motion Detected"')    # This part of code only works on mac
 		
 	cv2.imshow("Face Detector", frame)
